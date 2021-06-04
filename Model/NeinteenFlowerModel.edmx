@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="NeinteenFlowerDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="NeinteenFlowerDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="MsEmployee">
           <Key>
             <PropertyRef Name="EmployeeID" />
@@ -69,7 +69,7 @@
           <Property Name="TransactionDate" Type="date" Nullable="false" />
           <Property Name="DiscountPercentage" Type="float" Nullable="false" />
         </EntityType>
-        <Association Name="FK__MsFlower__Flower__29572725">
+        <Association Name="FK__MsFlower__Flower__47DBAE45">
           <End Role="MsFlowerType" Type="Self.MsFlowerType" Multiplicity="1" />
           <End Role="MsFlower" Type="Self.MsFlower" Multiplicity="*" />
           <ReferentialConstraint>
@@ -136,7 +136,7 @@
           <EntitySet Name="MsMember" EntityType="Self.MsMember" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TrDetail" EntityType="Self.TrDetail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TrHeader" EntityType="Self.TrHeader" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__MsFlower__Flower__29572725" Association="Self.FK__MsFlower__Flower__29572725">
+          <AssociationSet Name="FK__MsFlower__Flower__47DBAE45" Association="Self.FK__MsFlower__Flower__47DBAE45">
             <End Role="MsFlowerType" EntitySet="MsFlowerType" />
             <End Role="MsFlower" EntitySet="MsFlower" />
           </AssociationSet>
@@ -157,8 +157,7 @@
             <End Role="TrHeader" EntitySet="TrHeader" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NeinteenFlowerDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
