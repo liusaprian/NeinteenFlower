@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.Master.cs" Inherits="NeinteenFlower.View.Navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div style="display:flex; padding-top:2px; width:120px; justify-content:space-between"; >
+                 <asp:LinkButton ID="LinkButton2" runat="server" href="Register.aspx">Register</asp:LinkButton>
+                 <asp:LinkButton ID="LinkButton1" runat="server" href="Login.aspx">Login</asp:LinkButton>            
+            </div>
+        </div>
+    </form>
+</body>
+</html>
